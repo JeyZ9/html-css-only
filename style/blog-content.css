@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    padding:  0 20vw;
+    margin: 4rem 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.text-header{
+    margin: 4rem 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #bababa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text-header>h1{
+    color: lightseagreen;
+}
+.text-content{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.image-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

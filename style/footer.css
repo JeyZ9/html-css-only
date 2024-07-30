@@ -1,0 +1,146 @@
+h2{
+    color: lightseagreen;
+}
+p{
+    color: #808080;
+}
+h4{
+    color: #404040;
+}
+li{
+    list-style: none;
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    gap: 5vw;
+    border-bottom: 1px solid #404040;
+    padding: 20px 0;
+}
+.footer-box{
+    height: 100%;
+}
+.footer-box > img{  
+    width: 15vw;
+    border-radius: 100%;
+}
+.footer-box > p{  
+    width: 15vw;
+    text-align: center;
+    font-size: small;
+}
+.footer-container-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.select-group{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px 5vw;
+}
+.footer-box > ul > h3, .footer-box > h3{
+    font-weight: bold;
+    font-size: medium;
+    color: #404040;
+}
+.footer-box > ul > li{
+    font-size: medium;
+    color: #808080;
+}
+.footer-box > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* text-align: start; */
+}
+.footer-box-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* background-color: aquamarine; */
+    gap: 10px;
+}
+.footer-box-contact > ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.footer-box-contact > ul > li > a{
+    font-size: larger;
+    color: #808080;
+}
+.footer-box-contact > ul > li > a:hover{
+    font-size: larger;
+    color: lightseagreen;
+    transition: 250ms 250ms ease-in-out;
+}
+.subscribe-box{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.subscribe-input{
+    padding: 10px;
+    width: 15vw;
+    border-color: lightseagreen;
+    outline-color: lightseagreen;
+}
+.input-btn{
+    padding: 10px;
+    border: none;
+    background-color: lightseagreen;
+    color: white;
+    font-weight: bold;
+}
+.input-btn:hover{
+    background-color: rgb(29, 153, 147);
+    transition: 250ms 250ms ease-in-out;
+}
+.subscribe-input, .input-btn{
+    border-radius: 100px;
+}
+.sub-footer > p{
+    margin: 3vh 0;
+    font-size: small;
+}
+@media (max-width: 640px) {
+        /* footer */
+        .footer-box > p{  
+            font-size: x-small;
+        }
+        .footer-box > ul > h3, .footer-box > h3{
+            font-size: small;
+        }
+        .footer-box > ul > li{
+            font-size: x-small;
+        }
+        .subscribe-box{
+            flex-direction: column;
+        }
+        .subscribe-input{
+            font-size: x-small;
+        }
+        .input-btn{
+            font-size: x-small;
+        }
+        .sub-footer > p{
+            font-size: xx-small;
+        }
+}
